@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         val day =myCalender.get(Calendar.DAY_OF_MONTH)
 
         val ddt= DatePickerDialog(this,
-            DatePickerDialog.OnDateSetListener{ _,selectedYear,selectedMonth,selectedDayOfMonth->
+            DatePickerDialog.OnDateSetListener{ _,selectedYear,selectedMonth,selectedDayOfMonth ->
                 val selectedDate="$selectedDayOfMonth/${selectedMonth+1}/$selectedYear"
 
                 tvSelectedDate?.text=selectedDate
